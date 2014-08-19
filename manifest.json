@@ -13,8 +13,8 @@
     },
     "content_scripts": [
         {
-          "matches": ["https://github.com/*", "https://www,github.com/*", "https://huboard.com/*", "https://www.huboard.com/*"],
-          "css": ["site.css"],
+          "matches": ["https://github.com/*", "https://www,github.com/*", "https://huboard.com/*", "https://www.huboard.com/*", "https://storedgefms.com/*", "https://www.storedgefms.com/*"],
+          "css": ["widgets.css", "site.css"],
           "js": ["jquery.js", "app.js"]
         }
     ]
