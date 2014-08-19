@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "RNL Enhancement Suite",
+    "version": "1.0.1",
+    "description": "Toggle images in GitHub issues",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://github.com/*", "https://www,github.com/*", "https://huboard.com/*", "https://www.huboard.com/*"],
+          "css": ["site.css"],
+          "js": ["jquery.js", "app.js"]
+        }
+    ]
+}
