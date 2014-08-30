@@ -1,0 +1,28 @@
+input[type='checkbox']:checked::before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALBAMAAABbgmoVAAAAA3NCSVQICAjb4U/gAAAAElBMVEX///////////////////////+65XQCAAAABnRSTlMAImZ3qv/jvhYRAAAACXBIWXMAAAsSAAALEgHS3X78AAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M1cbXjNgAAADhJREFUCJljEGJgYGAWYDBVYGBQVWBgCmJgDmIAMYEcBgamEBCHgcHVgQHBg8gBVQIRTB/IFCYBAN0DBbjWkdqqAAAAAElFTkSuQmCC);
+    background-color: #20a7df;
+    height: 13px;
+    width: 13px;
+}
+
+body input[type='checkbox'] {
+    height: 13px;
+    width: 13px;
+}
+
+input[type='radio']:checked::before {
+    background-color: #20a7df;
+}
+
+:enabled:hover:-webkit-any( select, input[type='checkbox'], input[type='radio'], :-webkit-any( button, input[type='button'], input[type='submit']):not(.custom-appearance):not(.link-button)) {
+    border-color: #20a7df;
+}
+
+body .radio input[type="radio"] {
+    width: 13px;
+    height: 13px;
+}
+
+body .checkbox input[type="checkbox"] {
+    width: 13px;
+}
