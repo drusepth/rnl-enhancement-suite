@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "RNL Enhancement Suite",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Toggle images in GitHub issues",
     "browser_action": {
         "default_icon": "images/icon.png"

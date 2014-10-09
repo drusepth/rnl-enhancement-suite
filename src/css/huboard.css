@@ -1,8 +1,8 @@
-.card img {
+#application .card img {
     position: static;
     margin-top: 3px;
 }
 
-.card .number small {
+#application .card .number small {
     display: none;
 }
