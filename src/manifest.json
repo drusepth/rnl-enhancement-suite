@@ -15,7 +15,7 @@
         {
           "matches": ["https://github.com/*", "https://www,github.com/*", "https://huboard.com/*", "https://www.huboard.com/*"],
           "css": ["css/site.css", "css/huboard.css"],
-          "js": ["js/vendors/jquery.js", "js/app.js"]
+          "js": ["js/vendors/jquery.js", "js/vendors/aws-sdk-2.0.22.min.js", "js/aws-config.js", "js/app.js", "js/file-upload.js"]
         }
     ]
 }

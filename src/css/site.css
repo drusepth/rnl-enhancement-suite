@@ -1,3 +1,17 @@
+.rnl-uploader-drop {
+    background-color: #eee;
+    border: 2px dashed #ccc;
+    color: #888;
+    height: 80px;
+    width: 100px;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    text-align: center;
+}
+
+
+/* Custom form controls */
 input[type='checkbox']:checked::before {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALBAMAAABbgmoVAAAAA3NCSVQICAjb4U/gAAAAElBMVEX///////////////////////+65XQCAAAABnRSTlMAImZ3qv/jvhYRAAAACXBIWXMAAAsSAAALEgHS3X78AAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M1cbXjNgAAADhJREFUCJljEGJgYGAWYDBVYGBQVWBgCmJgDmIAMYEcBgamEBCHgcHVgQHBg8gBVQIRTB/IFCYBAN0DBbjWkdqqAAAAAElFTkSuQmCC);
     background-color: #20a7df;
