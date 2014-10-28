@@ -9,3 +9,7 @@ When viewing issues on Github or Huboard, any images inside the comment body wil
 #### Huboard ticket highlight for no estimate
 
 Tickets on a Huboard board that don't have a proper estimate ([S], [M], [L], [XL], etc) will be highlighted with a red border.
+
+#### Github File Uploads
+
+Ability to drag and drop a file on a GitHub comment.
