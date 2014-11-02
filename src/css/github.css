@@ -1,0 +1,15 @@
+.github .rnl-uploader-drop {
+    background-color: #eee;
+    border: 2px dashed #ccc;
+    color: #888;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    text-align: center;
+}
+
+.github .previewable-comment-form textarea, .github .previewable-comment-form .drag-and-drop {
+    width: 83%;
+}

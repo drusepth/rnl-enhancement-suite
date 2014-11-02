@@ -1,6 +1,9 @@
 $(function() {
     var App = {};
 
+    var host = window.location.host;
+    $("body").addClass(host.substring(0, host.indexOf(".com")));
+
     App.toggle_images = function() {
         $(".comment-body img:not('.toggled'):not('.emoji')").hide().addClass("toggled")
             .before($("<a href='#' style='display:block;'>Toggle image</a>").click(function() {
