@@ -13,3 +13,7 @@ Tickets on a Huboard board that don't have a proper estimate ([S], [M], [L], [XL
 #### Github File Uploads
 
 Ability to drag and drop files to add a link in a Github comment.
+
+#### Github/Huboard Links
+
+External links in comments will now open in new windows.
