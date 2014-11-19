@@ -3,9 +3,6 @@ $(function() {
       if (github_comment_box) {
           github_comment_box.append($("<div id='rnl-uploader-drop' class='rnl-uploader-drop'>Drop files here <div class='rnl-uploader-message'></div></div>"));
 
-          var bucket = new AWS.S3({params: {Bucket: 'rnl-enhancement-suite'}});
-          var uploader_message = $(".rnl-uploader-message");
-
           var dropbox = $("#rnl-uploader-drop");
           if (dropbox) {
               dropbox.on("dragenter dragexit dragover", function(evt) {
@@ -22,8 +19,11 @@ function drop(evt) {
     evt.stopPropagation();
     evt.preventDefault();
 
-    var files = evt.originalEvent.dataTransfer.files;
-    var uploaded_count = 0;
+    var files = evt.originalEvent.dataTransfer.files,
+        uploaded_count = 0,
+        bucket = new AWS.S3({params: {Bucket: 'rnl-enhancement-suite'}}),
+        uploader_message = $(".rnl-uploader-message");
+        github_comment_box = $(".github .write-content");
 
     uploader_message.text("Processing (" + files.length + ")");
     $.each(files, function(index, file) {
