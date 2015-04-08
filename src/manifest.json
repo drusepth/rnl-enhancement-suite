@@ -1,21 +1,37 @@
 {
-    "manifest_version": 2,
-    "name": "RNL Enhancement Suite",
-    "version": "1.0.9",
-    "description": "Suite of tools to help RNL",
-    "browser_action": {
-        "default_icon": "images/icon.png"
+  "manifest_version": 2,
+  "name": "RNL Enhancement Suite",
+  "version": "1.0.10",
+  "description": "Suite of tools to help RNL",
+  "browser_action": {
+    "default_icon": "images/icon.png"
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*", "https://www.github.com/*"],
+      "css": ["css/github.css"],
+      "js": [
+        "js/vendors/jquery.js",
+        "js/vendors/aws-sdk-2.0.22.min.js",
+        "js/aws-config.js",
+        "js/app.js",
+        "js/file-upload.js"
+      ]
     },
-    "icons": {
-        "16": "images/icon16.png",
-        "48": "images/icon48.png",
-        "128": "images/icon128.png"
-    },
-    "content_scripts": [
-        {
-          "matches": ["https://github.com/*", "https://www,github.com/*", "https://huboard.com/*", "https://www.huboard.com/*"],
-          "css": ["css/github.css", "css/huboard.css"],
-          "js": ["js/vendors/jquery.js", "js/vendors/aws-sdk-2.0.22.min.js", "js/aws-config.js", "js/app.js", "js/file-upload.js"]
-        }
-    ]
+
+    {
+      "matches": ["https://jira.rnl.io/*"],
+      "css": ["css/jira.css"],
+      "js": [
+        "js/vendors/jquery.js",
+        "js/app.js",
+        "js/jira.js"
+      ]
+    }
+  ]
 }

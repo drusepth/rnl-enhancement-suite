@@ -2,18 +2,16 @@
 
 ## Enhancements
 
-#### Github/Huboard image collapse
+### GitHub
 
-When viewing issues on Github or Huboard, any images inside the comment body will be replaced with a link that when clicked will hide/show the image.
+- When viewing issues on Github or Huboard, any images inside the comment body will be replaced with a link that when clicked will hide/show the image.
 
-#### Huboard ticket highlight for no estimate
+- Ability to drag and drop files to add a link in a Github comment.
 
-Tickets on a Huboard board that don't have a proper estimate ([S], [M], [L], [XL], etc) will be highlighted with a red border.
+- External links in comments will now open in new windows.
 
-#### Github File Uploads
+### JIRA
 
-Ability to drag and drop files to add a link in a Github comment.
+- In-development status lozenges are recolored to better represent ticket state.
 
-#### Github/Huboard Links
-
-External links in comments will now open in new windows.
+- External links in comments will now open in new windows.
